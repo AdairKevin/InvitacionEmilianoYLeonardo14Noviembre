@@ -1,0 +1,347 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitacion Emiliano y Leonardo</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+  </head>
+
+  <body class="center">
+    <div class="content">
+      <section class="section-home">
+        <div class="home-content">
+          <img class="home-img" alt="photo" src="./assets/img/portada.jpg" />
+        </div>
+      </section>
+
+      <section class="informacion-principal">
+        <div class="titulo">
+          <h1>Presentación y XV Años</h1>
+          <h2>Emiliano y Leonardo</h2>
+          <p class="frase">
+            Bienvenidos a nuestra celebración, un momento lleno de alegría y
+            amor que queremos compartir con todos ustedes.
+          </p>
+        </div>
+      </section>
+
+      <section class="musica">
+        <div class="music-card">
+          <div class="album-art"></div>
+          <div class="song-title"></div>
+          <div class="artist-name"></div>
+
+          <button class="play-button" id="playPauseBtn">▶</button>
+
+          <div class="progress-container">
+            <div class="progress" id="progressBar"></div>
+          </div>
+
+          <audio id="audioPlayer" src="./assets/music/"></audio>
+          <!-- Cambia por tu archivo mp3 -->
+        </div>
+      </section>
+
+      <section class="section-info">
+        <div class="overlay-section-info">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-info">
+          <div class="info-primary">
+            <h1>Emiliano y Leonardo</h1>
+            <p>
+              Con amor, la bendición de Dios y el apoyo de nuestra familia,
+              celebramos este momento especial contigo.
+            </p>
+          </div>
+          <div class="info-secundary">
+            <div class="info-content">
+              <b>Madrina de Bautizo</b>
+              <ul>
+                <li>Jaqueline Vargas Ramirez</li>
+              </ul>
+            </div>
+            <div class="info-content">
+              <b>Padrino de Presentación</b>
+              <ul>
+                <li>Mac. Octavio Zuñiga</li>
+              </ul>
+            </div>
+            <div class="info-content">
+              <b>Mis Padrinos XV años</b>
+              <ul>
+                <li>Juan Antonio</li>
+                <li>Oscar Jair</li>
+                <li>Lucero Rivero</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-date">
+            <div class="date-info center">
+              <img width="200" src="./assets/img/separador.png" alt="rings" />
+              <p class="date-text">
+                Estamos a pocos momentos de celebrar juntos esta gran alegría.
+              </p>
+            </div>
+            <div class="date-box">
+              <h2>SÁBADO</h2>
+              <ul class="center">
+                <li>NOV</li>
+                <li>14</li>
+                <li>12:00</li>
+              </ul>
+            </div>
+            <ul class="date-time">
+              <li>
+                <div class="time_number" id="dias"></div>
+                <div class="time_txt">Días</div>
+              </li>
+              <li>
+                <div class="time_number" id="horas"></div>
+                <div class="time_txt">Horas</div>
+              </li>
+              <li>
+                <div class="time_number" id="minutos"></div>
+                <div class="time_txt">Minutos</div>
+              </li>
+              <li>
+                <div class="time_number" id="segundos"></div>
+                <div class="time_txt">Segundos</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-calendar">
+        <div class="calendar-box">
+          <div class="calendar-header">
+            <span>MIS XV, Bautizo y Presentación</span>
+            <h2>NOV</h2>
+          </div>
+
+          <div class="calendar-body">
+            <div class="week">
+              <span>D</span>
+              <span>L</span>
+              <span>M</span>
+              <span>M</span>
+              <span>J</span>
+              <span>V</span>
+              <span>S</span>
+            </div>
+
+            <div class="days">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span>7</span>
+
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+              <span>11</span>
+              <span>12</span>
+              <span>13</span>
+              <span class="active">14</span>
+
+              <span>15</span>
+              <span>16</span>
+              <span>17</span>
+              <span>18</span>
+              <span>19</span>
+              <span>20</span>
+              <span>21</span>
+
+              <span>22</span>
+              <span>23</span>
+              <span>24</span>
+              <span>25</span>
+              <span>26</span>
+              <span>27</span>
+              <span>28</span>
+
+              <span>29</span>
+              <span>30</span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <a
+            class="calendar-btn"
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=XV+,+Bautizo+y+Presentación+de+Emiliano+y+Leonardo&dates=20261114T120000Z%2F20261114T180000Z&details=Celebración+de+XV+años+de+Emiliano+y+Leonardo&location=Parroquia+de+Santiago+Apostol"
+            target="_blank"
+          >
+            <span>＋</span>
+            Agregar a mi calendario
+          </a>
+        </div>
+      </section>
+
+      <section class="section-cronograma">
+        <div class="cronograma-container">
+          <div class="cronograma-title">
+            <h2>Itinerario</h2>
+            <p>
+              Acompáñanos a vivir cada momento de esta celebración tan especial.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <img src="./assets/icons/church.svg" alt="ceremonia" />
+              </div>
+
+              <div class="timeline-content">
+                <span>12:00 HRS</span>
+                <h3>Ceremonia</h3>
+                <p>
+                  Daremos inicio a este día especial con la bendición de Dios.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <img src="./assets/icons/copa.png" alt="recepcion" />
+              </div>
+
+              <div class="timeline-content">
+                <span>15:00 HRS</span>
+                <h3>Recepción</h3>
+                <p>
+                  Recibiremos a nuestros invitados para compartir juntos este
+                  momento.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-place">
+        <div class="overlay-section-place">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-place">
+          <div class="place-info center">
+            <img
+              width="75"
+              src="./assets/icons/church.svg"
+              alt="church"
+              fill="#000000"
+            />
+            <div class="place-txt">
+              <h2>Ceremonia</h2>
+              <p>
+                Parroquia de Santiago Apostol, Av. Ricardo Flores Magón s/n,
+                Santiago, 56615 Valle de Chalco Solidaridad, Méx.
+              </p>
+            </div>
+          </div>
+          <a
+            class="place-btn"
+            href="https://maps.app.goo.gl/wUi1o97TtGs8t2rC6"
+            target="_blank"
+          >
+            VER UBICACIÓN
+          </a>
+        </div>
+      </section>
+
+      <section class="section-place-salon">
+        <div class="overlay-section-place">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-place-salon">
+          <div class="place-info center">
+            <img width="120" src="./assets/icons/bola.png" alt="disco" />
+            <div class="place-txt fiesta">
+              <h2>Fiesta</h2>
+              <p>
+                poniente 15 manzana 1420 lote 7 Colonia Santiago, Valle de
+                Chalco Solidaridad, Méx.
+              </p>
+            </div>
+          </div>
+          <a
+            class="place-btn"
+            href="https://maps.app.goo.gl/k6cEtxp6BCou5sP26"
+            target="_blank"
+          >
+            VER UBICACIÓN
+          </a>
+        </div>
+      </section>
+
+      <section class="section-galeria">
+        <section class="section-info-adicional">
+          <div class="info-clothes">
+            <img height="70" src="./assets/icons/Clothes.svg" alt="clothes" />
+            <div class="clothes-txt">
+              <h2>Vestimenta</h2>
+              <p>La vestimenta es libre, ¡ven con lo que más te guste!</p>
+            </div>
+          </div>
+          <div class="info-separator">
+            <img width="200" src="./assets/img/separador.png" alt="separator" />
+          </div>
+          <div class="info-envelope">
+            <img width="70" src="./assets/icons/envelope.svg" alt="envelope" />
+            <div class="envelope-txt"></div>
+            <h2>Mesa de regalos</h2>
+            <p>
+              Tu presencia es el mejor regalo, pero si deseas acompañarla con un
+              detalle, será muy apreciado.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section class="section-message">
+        <div class="overlay-section-message">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-message">
+          <p>
+            Los mejores momentos de la vida <br />
+            merecen ser compartidos
+          </p>
+          <b>¡Gracias por acompañarnos!</b>
+          <button class="confirmar">
+            <a href="https://wa.link/9uhdy9" target="_blank">
+              Confirmar asistencia
+            </a>
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        Design by
+        <a
+          href="https://www.facebook.com/profile.php?id=61568997140138"
+          target="_blank"
+          >Mirai</a
+        >
+        @2025
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
